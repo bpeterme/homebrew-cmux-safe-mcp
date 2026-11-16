@@ -1,6 +1,8 @@
 class CmuxSafeMcp < Formula
   desc "MCP server with only the safe parts of cmux: agents can list, open, arrange and label workspaces and notify you, but never type into terminals, run commands or read screens"
   homepage "https://github.com/bpeterme/cmux-safe-mcp"
+  url "https://github.com/bpeterme/cmux-safe-mcp/archive/refs/tags/2026.11.16.0.tar.gz"
+  sha256 "47de9106691bf3d58c28f73c7da316e36ea894c3973aabbdc9d2183f8c840b47"
   license "MIT"
 
   head "https://github.com/bpeterme/cmux-safe-mcp.git", branch: "dev"
@@ -30,6 +32,6 @@ class CmuxSafeMcp < Formula
   end
 
   test do
-    assert_match "cmux-safe-mcp HEAD-", shell_output("#{bin}/cmux-safe-mcp version")
+    assert_match version.to_s, shell_output("#{bin}/cmux-safe-mcp version")
   end
 end
