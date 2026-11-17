@@ -1,8 +1,8 @@
 class CmuxSafeMcp < Formula
   desc "MCP server with only the safe parts of cmux: agents can list, open, arrange and label workspaces and notify you, but never type into terminals, run commands or read screens"
   homepage "https://github.com/bpeterme/cmux-safe-mcp"
-  url "https://github.com/bpeterme/cmux-safe-mcp/archive/refs/tags/2026.11.16.1.tar.gz"
-  sha256 "011b8646b408d6e22480f833465d3e4831fd56561411469f2df837d2599088f6"
+  url "https://github.com/bpeterme/cmux-safe-mcp/archive/refs/tags/2026.11.17.0.tar.gz"
+  sha256 "e19d8a6020d720774f956202a228f51478453a6a6c30b072b2a104c8e97631c1"
   license "MIT"
 
   head "https://github.com/bpeterme/cmux-safe-mcp.git", branch: "dev"
